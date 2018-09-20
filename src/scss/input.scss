@@ -2,7 +2,7 @@ $accent-1: #C22336;
 $accent-2: #F04137;
 $accent-3: #541230;
 $dark-accent: #2E0517;
-$shadow: #302F2F;
+$shadow:  1px 1px 1px #302F2F;
 $sans: 'Montserrat', sans-serif;
 $serif: 'EB Garamond', serif;
 $ultra: 'Fjalla One', sans-serif;
@@ -150,5 +150,85 @@ ul:not(.browser-default) {
   letter-spacing: 2px;
   line-height: 38px;
   width: 25%;
-  text-shadow: 1px 1px 1px $shadow;
+  text-shadow: $shadow;
+}
+
+//about content
+
+.about {
+  position: relative;
+  height: 770px;
+ .container {
+   background: url('../img/about-lake.jpg') center center no-repeat;
+   background-size: cover;
+   height: 720px;
+   position: absolute;
+   top: -50px;
+   left: 50%;
+   transform: translate(-50%, 0);
+ }
+}
+
+.about-content {
+  padding-top: 100px!important;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 18px;
+  font-family: $sans;
+  color: white;
+  font-weight: bold;
+  text-shadow: $shadow;
+}
+
+.div-line {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  border-bottom: solid #fff 2px;
+}
+
+.about-pg {
+  padding: 0 22px;
+  padding-top: 38px;
+  color: white;
+  text-shadow: $shadow;
+  .pad-top {
+    padding-top: 42px;
+  }
+}
+
+.history {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.history-2 {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.locations {
+  padding-top: 10%;
+  text-align: center;
+  color: $accent-2;
+}
+
+.hosts-wrapper {
+  transform: translateY(-24%);
+}
+
+.alien-wrapper {
+  padding: 70px 0;
+}
+
+.btn-custom {
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
 }
