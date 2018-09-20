@@ -1,0 +1,64 @@
+$accent-1: #C22336;
+$accent-2: #F04137;
+$accent-3: #541230;
+$dark-accent: #2E0517;
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-wrapper {
+  height: 100%;
+  min-height: 100%;
+  background: url("../img/hero-bg.jpg") center center no-repeat #e1e1e1;
+  background-size: cover;
+}
+
+.hero-wrapper {
+  height: auto;
+}
+
+.sidenav {
+  padding-top: 80px;
+  background-color: $accent-1;
+  box-shadow: none;
+  width: 100%;
+  li > a {
+    color: white;
+    font-size: 36px;
+    line-height: 48px;
+    height: auto;
+    display: inline-block;
+    transition: all ease 0.4s;
+  }
+  li > a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
+
+ul:not(.browser-default) {
+  padding-left: 50px;
+}
+
+.close-ico {
+  font-size:36px;
+}
+
+.sidenav-overlay {
+  width: 100%;
+  background-color: $accent-1;
+}
+
+.sidenav-trigger {
+  position: fixed;
+  top: 80px;
+  left: 80px;
+  i {
+    color: $dark-accent;
+    font-size: 36px;
+  }
+}
